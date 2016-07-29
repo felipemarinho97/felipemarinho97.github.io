@@ -1,0 +1,29 @@
+body {
+	margin: 0px;
+	font-family: "Open Sans";
+}
+.section {	
+	text-align: center;
+	background-color: #d32f2f;
+	padding: 10px;
+	color: #fff;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.section:hover {
+	background-color: #C62828;
+}
+section > div {
+	background-color: #FFEBEE;
+	margin: 30px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 15px;
+	border-radius: 15px;
+}
+.picture {	
+	height: 125px;
+	border-radius: 50%;
+}
+.picture:hover {
+	height: 200px;
+}
