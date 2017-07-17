@@ -5,6 +5,12 @@ body {
 	font-family: "Open Sans";
 	background: #e7e7e7;
 }
+.social > a {
+	text-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+	letter-spacing: 1em;
+	color: #eDeDeD;
+}
+
 .section {	
 	text-align: center;
 	background-color: #d32f2f;
@@ -30,5 +36,8 @@ section > div {
 }
 .picture:hover {
 	height: 200px;
+}
+a {
+	text-decoration: none;
 }
 }
