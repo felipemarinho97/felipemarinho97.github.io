@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="utf-8">
 
 <html>
   <head>
@@ -10,7 +11,7 @@
         margin-right: 10%;
         margin-top: 50px;
         border-radius: 15px;
-        padding: 15px;
+        padding: 25px;
         box-shadow: 0 0 10px #b7b7b7;
 
       }
@@ -18,13 +19,135 @@
         font-family: sans-serif;
         background: #e7e7e7;
       }
+      table, td {
+      	border: 1px solid black;
+      }
+
+      table {
+		background-color:#FFFFFF;
+		border-collapse:collapse;
+		border-width:1px;
+		border-color:#336600;
+		border-style:solid;
+		color:#000000;
+	  }
+
+	  table td, table th {
+		border-width:1px;
+		border-color:#336600;
+		border-style:solid;
+		padding:3px;
+	  }
+
+	  table thead {
+		background-color:#FFFFFF;
+	  }
+
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f',GradientType=0);
+	background-color:#f24537;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+	background:-moz-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+	background:-webkit-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+	background:-o-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+	background:-ms-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537',GradientType=0);
+	background-color:#c62d1f;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
     </style>
   </head>
   <body>
     <div class="corpo">
       <h1>Consulta UP</h1>
-      Download: <a
+      <a class="button"
+    href="https://drive.google.com/open?id=0B9wriEyRiUvEb1lvRERuNXpLTDQ">Download v2.5</a>
+    <br>
+    <br>
+	<table>
+		<thead>
+			<tr>
+				<th>Versão</th>
+				<th>Notas da Versão</th>
+				<th>Download</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>2.5</td>
+				<td>
+					<ul>
+					  <li> Adicionado verificações de atualização automática.
+					  <li> Suporte para separadores diferentes.
+					  <li> Suporte para listas do Rio Grande do Norte, Pará e Goiás.
+					</ul>
+				</td>
+				<td>
+				<a
     href="https://drive.google.com/open?id=0B9wriEyRiUvEb1lvRERuNXpLTDQ">https://drive.google.com/open?id=0B9wriEyRiUvEb1lvRERuNXpLTDQ</a>
+    			</td>
+			</tr>
+			<tr>
+				<td>2.4</td>
+				<td>
+					<ul>
+						<li> Listas do Ceará e Piauí agora suportadas.
+						<li> Adicionado suporte dinâmico a múltiplos estados da federação.
+						<li> Implementado novo sistema de atualizações.
+						<li> Melhorias na interface.
+						<li> Adicionado opção de "Busca exata" 60% mais rápida.
+						<li> Melhorias na velocidade das buscas em 15%.
+						<li> Bug no link de contato corrigido.
+					</ul>
+				</td>
+				<td>Indisponível</td>
+			</tr>
+			<tr>
+				<td>2.0</td>
+				<td>
+					<ul>
+					  <li> Suporte para lista da Paraíba.
+					  <li> Sistema de buscas com expressões regulares (regex).
+					  <li> Detecção de charset do arquivo automática.
+					</ul>
+				</td>
+				<td>Indisponível</td>
+			</tr>
+		</tbody>
+	</table>
     </div>
   </body>
 </html>
