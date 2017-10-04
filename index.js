@@ -2,7 +2,67 @@ $(function() {
   var sectionHeader = $('.sectionHeader');
   $(window).scroll(function() {
     if ($(this).scrollTop() > 264 - 50) {
-      console.log(sectionHeader.css('height'));
+      $('.sectionHeader').css({
+        'position': 'fixed',
+        'max-height': '50px',
+        'text-align': 'center',
+        'float': 'none'
+      })
+      $('.picture').css({
+        'width': '52.5px',
+        'height': '52.5px',
+        'position': 'relative',
+        'right': '41%'
+      })
+      $('.description').css({
+        'position': 'fixed',
+        'top': '-1.71px',
+        'left': '0%',
+        'right': '0%'
+      })
+      $('.description').css({
+        'opacity': '1'
+      })
+      $('.description > h3').css({
+        'opacity': '0'
+      })
+
+      if ($(this).width() > 640) {
+        $('.social').css({
+          'left': '41%',
+          'position': 'relative',
+          'top': '-40.04px',
+          'right': '0%'
+        })
+      } else if ($(this).width() > 500) {
+          $('.social').css({
+            'left': '36.5%',
+            'position': 'relative',
+            'top': '-40.04px',
+            'right': '0%'
+          })
+      } else if ($(this).width() > 240) {
+        $('.social').css({
+          'left': '29.5%',
+          'position': 'relative',
+          'top': '-40.04px',
+          'right': '0%'
+        })
+        $('.description').css({
+          'opacity': '0'
+        })
+      } else {
+        $('.social').css({
+          'left': '18%',
+          'position': 'relative',
+          'top': '-40.04px',
+          'right': '0%'
+        })
+        $('.description').css({
+          'opacity': '0'
+        })
+      }
+      //console.log(sectionHeader.css('height'));
       // $('section').css({
       //   'padding-top': sectionHeader.css('height')
       // })
@@ -34,7 +94,6 @@ $(function() {
       var percentOfSectionScrolled = parseInt(((264 - $(this).scrollTop())*100)/264);
       var lateralDistance = 50 - (percentOfSectionScrolled/2);
       // console.log(100-percentOfSectionScrolled);
-      $('.description > h3').show()
       if (lateralDistance < 50) {
         $('.picture').css({
           'position': 'relative',
