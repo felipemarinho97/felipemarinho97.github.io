@@ -47,6 +47,14 @@ table thead {
   background-color: #FFFFFF;
 }
 
+.recent {
+  background-color: #e0f9ed;
+}
+
+.old {
+  background-color: #f9e0e8;
+}
+
 @media (max-width: 640px) {
   .corpo {
     margin-left: 5%;
