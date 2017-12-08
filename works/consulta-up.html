@@ -5,26 +5,29 @@
 <head>
   <meta charset="utf-8">
   <title>Consulta UP (CDE)</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="consulta-up.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="consulta-up.js"></script>
   <link rel="shortcut icon" type="image/png" href="CDE_Logo-64.png" />
 </head>
 
 <body>
-  <div class="corpo">
-    <h1>CDE (Consulta UP)</h1>
+  <div class="corpo-estilo">
+    <h2><strong>CDE (Consulta UP)</strong></h2>
     <p>O <strong>Consulta Database Eleitoral (CDE)</strong> ou <strong>Consulta UP</strong> é um aplicativo desnvolvido para uso da militância da <em>Unidade Popular pelo Socialismo - UP</em>. Ele permite a busca de nome e títulos de forma mais eficiente
       nas listas fornecidas pelo TRE, que devem estar no formato <i>.txt</i> ou <i>.csv</i> para funcionar corretamente.</p>
-    <a class="button" href="https://drive.google.com/open?id=11ukzZgxj1toUKxLUqJeoAcUFvy5rfQuv">Download v2.6</a>
+    <a class="btn btn-danger btn-lg" href="https://drive.google.com/open?id=1kH5K8U1_Q9cwVx95zcgK6yJwvukBJwpm"><strong>Download v2.6.1</strong></a>
     <br>
     <p><strong>OBS:</strong> É necessário ter o <i>Java >= 8.0</i> para que a aplicação funcione corretamente, caso você ainda não tenha o Java no seu computador, baixe ele
       <a href="https://www.java.com/pt_BR/download/" target="_blank">aqui</a>.</p>
     <br>
-    <h3>Histórico de Alterações</h3>
+
+    <h4>Histórico de Alterações</h4>
     <table class="table table-action">
       <thead>
-        <tr>
+        <tr class="">
           <th>Versão</th>
           <th>Notas da Versão</th>
           <th>Download</th>
@@ -46,6 +49,17 @@
         </tr>
        -->
         <tr class="recent">
+          <td>2.6.1</td>
+          <td>
+            <ul>
+              <li/> Corrigido bug ao copiar títulos para área de tranferência no formato "xxxx xxxx xxxx" para retornar o formato "xxxxxxxxxxxx".
+            </ul>
+          </td>
+          <td>
+            <a class="downloadLink" href="https://drive.google.com/open?id=1kH5K8U1_Q9cwVx95zcgK6yJwvukBJwpm">https://drive.google.com/open?id=1kH5K8U1_Q9cwVx95zcgK6yJwvukBJwpm</a>
+          </td>
+        </tr>
+        <tr class="old">
           <td>2.6</td>
           <td>
             <ul>
