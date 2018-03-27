@@ -1,0 +1,149 @@
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="works/consulta-up.css">
+  <link rel="shortcut icon" type="image/png" href="works/CDE_Logo-64.png" />
+</head>
+
+<body >
+  <div class="corpo-estilo" ng-controller="consultaUpCtrl">
+    <h2><strong>CDE (Consulta UP)</strong></h2>
+    <p>O <strong>Consulta Database Eleitoral (CDE)</strong> ou <strong>Consulta UP</strong> é um aplicativo desnvolvido para uso da militância da <em>Unidade Popular pelo Socialismo - UP</em>. Ele permite a busca de nome e títulos de forma mais eficiente
+      nas listas fornecidas pelo TRE, que devem estar no formato <i>.txt</i> ou <i>.csv</i> para funcionar corretamente.</p>
+    <a class="btn btn-danger btn-lg" href="https://drive.google.com/open?id=1gAwPzo04hy3rmie5383DOCvtmdnBI2GN"><strong>Download v2.6.2</strong></a>
+    <br>
+    <p><strong>OBS:</strong> É necessário ter o <i>Java >= 8.0</i> para que a aplicação funcione corretamente, caso você ainda não tenha o Java no seu computador, baixe ele
+      <a href="https://www.java.com/pt_BR/download/" target="_blank">aqui</a>.</p>
+    <br>
+
+    <h4>Histórico de Alterações</h4>
+    <table class="table table-action">
+      <thead>
+        <tr class="">
+          <th>Versão</th>
+          <th>Notas da Versão</th>
+          <th>Download</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table Model
+        <tr class="recent">
+          <td>#version</td>
+          <td>
+            <ul>
+              <li/> # version notes
+              <li/>
+            </ul>
+          </td>
+          <td>
+            <a class="downloadLink" href="#link">#link</a>
+          </td>
+        </tr>
+       -->
+        <tr class="recent">
+          <td>2.6.2</td>
+          <td>
+            <ul>
+              <li/> Atualizado suporte para lista da Paraíba (versão Fevereiro).
+            </ul>
+          </td>
+          <td>
+            <a class="downloadLink" href="https://drive.google.com/open?id=1gAwPzo04hy3rmie5383DOCvtmdnBI2GN">https://drive.google.com/open?id=1gAwPzo04hy3rmie5383DOCvtmdnBI2GN</a>
+          </td>
+        </tr>
+        <tr class="old">
+          <td>2.6.1</td>
+          <td>
+            <ul>
+              <li/> Corrigido bug ao copiar títulos para área de tranferência no formato "xxxx xxxx xxxx" para retornar o formato "xxxxxxxxxxxx".
+            </ul>
+          </td>
+          <td>
+            <a class="downloadLink" href="https://drive.google.com/open?id=1kH5K8U1_Q9cwVx95zcgK6yJwvukBJwpm">https://drive.google.com/open?id=1kH5K8U1_Q9cwVx95zcgK6yJwvukBJwpm</a>
+          </td>
+        </tr>
+        <tr class="old">
+          <td>2.6</td>
+          <td>
+            <ul>
+              <li/> Corrigido bug de espaços remanescentes no final das palavras.
+              <li/> Implementado possibilidade de copiar o Nome, Título ou Zona do eleitor para a área de transferência.
+            </ul>
+          </td>
+          <td>
+            <a class="downloadLink" href="https://drive.google.com/open?id=11ukzZgxj1toUKxLUqJeoAcUFvy5rfQuv">https://drive.google.com/open?id=11ukzZgxj1toUKxLUqJeoAcUFvy5rfQuv</a>
+          </td>
+        </tr>
+        <tr class="old">
+          <td>2.5.3</td>
+          <td>
+            <ul>
+              <li/> Suporte melhorado na exibição de ícones.
+              <li/> Corrigido bug para listas do Rio Grande do Sul.
+            </ul>
+          </td>
+          <td>
+            <a class="downloadLink" href="https://drive.google.com/open?id=0B9wriEyRiUvEV3RjVHhIMmFtblE">https://drive.google.com/open?id=0B9wriEyRiUvEV3RjVHhIMmFtblE</a>
+          </td>
+        </tr>
+        <tr class="old">
+          <td>2.5.2</td>
+          <td>
+            <ul>
+              <li/> Suporte para as listas do Rio Grande do Sul.
+              <li/> Adicionado novo ícone.
+            </ul>
+          </td>
+          <td>
+            <a class="downloadLink" href="https://drive.google.com/open?id=0B9wriEyRiUvEQXItbTAwdUJVZlE">https://drive.google.com/open?id=0B9wriEyRiUvEQXItbTAwdUJVZlE</a>
+          </td>
+        </tr>
+        <tr class="old">
+          <td>2.5</td>
+          <td>
+            <ul>
+              <li/> Adicionado verificações de atualização automática.
+              <li/> Suporte para separadores diferentes.
+              <li/> Suporte para listas do Rio Grande do Norte, Pará e Goiás.
+            </ul>
+          </td>
+          <td>
+            <a class="downloadLink" href="https://drive.google.com/open?id=0B9wriEyRiUvEb1lvRERuNXpLTDQ">https://drive.google.com/open?id=0B9wriEyRiUvEb1lvRERuNXpLTDQ</a>
+          </td>
+        </tr>
+        <tr class="old">
+          <td>2.4</td>
+          <td>
+            <ul>
+              <li/> Listas do Ceará e Piauí agora suportadas.
+              <li/> Adicionado suporte dinâmico a múltiplos estados da federação.
+              <li/> Implementado novo sistema de atualizações.
+              <li/> Melhorias na interface.
+              <li/> Adicionado opção de "Busca exata" 60% mais rápida.
+              <li/> Melhorias na velocidade das buscas em 15%.
+              <li/> Bug no link de contato corrigido.
+            </ul>
+          </td>
+          <td>Indisponível</td>
+        </tr>
+        <tr class="old">
+          <td>2.0</td>
+          <td>
+            <ul>
+              <li/> Suporte para lista da Paraíba.
+              <li/> Sistema de buscas com expressões regulares (regex).
+              <li/> Detecção de charset do arquivo automática.
+            </ul>
+          </td>
+          <td>Indisponível</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="backButton">
+    <a ng-href="/" class="previous round">&#8249;</a>
+  </div>
+</body>

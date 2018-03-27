@@ -1,63 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="felipe" ng-controller="mainCtrl">
 
 <head>
 	<meta charset="utf-8">
-	<title>Felipe Marinho</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<script src="https://use.fontawesome.com/ceded2c5cc.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/javascript" src="index.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/ceded2c5cc.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="app.config.js"></script>
+	<script type="text/javascript" src="app.controller.js"></script>
+	<title>{{title}}</title>
 </head>
 
 <body>
-	<header>
-		<div class="sectionHeader">
-			<img src="https://pt.gravatar.com/userimage/90363825/8482358d9ae7376efd74fddac283b67a.jpg?size=500" class="picture">
-		<div class="description">
-			<h1>Felipe Marinho</h1>
-			<h3>Developer</h3>
-		</div>
-			<div class="social">
-				<a href="https://github.com/felipemarinho97"><i class="fa fa-github fa-2x"></i></a>
-				<a href="https://twitter.com/felipemarinho97"><i class="fa fa-twitter fa-2x"></i></a>
-				<a href="https://www.linkedin.com/in/felipe-vasconcelos-marinho-b28358121/"><i class="fa fa-linkedin fa-2x"></i></a>
-				<a href="mailto:felipevm97@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+	<div ng-if="path">
+		<header  ng-controller="resumoCtrl">
+			<div class="sectionHeader">
+				<img src="https://pt.gravatar.com/userimage/90363825/8482358d9ae7376efd74fddac283b67a.jpg?size=500" class="picture">
+				<div class="description">
+					<h1>Felipe Marinho</h1>
+					<h3>Developer</h3>
+				</div>
+				<div class="social">
+					<a href="https://github.com/felipemarinho97"><i class="fa fa-github fa-2x"></i></a>
+					<a href="https://twitter.com/felipemarinho97"><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="https://www.linkedin.com/in/felipe-vasconcelos-marinho-b28358121/"><i class="fa fa-linkedin fa-2x"></i></a>
+					<a href="mailto:felipevm97@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+				</div>
 			</div>
-		</div>
-	</header>
-	<section>
-		<div>
-			<h2>Resumo</h2>
-			<p>Graduando do curso de Ciências da Computação na UFCG (Universidade Federal da Paraíba), entre seus principais interesses incluem desenvolvimento open-source.</p>
-		</div>
-		<div>
-			<h2>Acadêmico</h2>
+		</header>
+	</div>
+	<div ng-if="!path"><header><div class="sectionHeaderCollapsed"></div></header></div>
 
-			<p>
-				<ul>
-					<li>Estrutura de Dados</li>
-					<li>Java</li>
-					<li>Python 2.7</li>
-				</ul>
-			</p>
-		</div>
-		<div>
-			<h2>Projetos</h2> Pequenos projetos pessoais feitos durante meu tempo livre e sem nenhum compromisso, alguns para aprender tecnologias, outros que foram/são bastante úteis para mim, no meu dia-a-dia, podem ser encontrados no GitHub.
-			<p>Open-Scrobbler - <a href="https://github.com/felipemarinho97/open-scrobbler">Link</a></p>
-			<p>TST Auto - <a href="https://github.com/felipemarinho97/TST-Auto">Link</a></p>
-			<p>musnify-mpd - <a href="https://github.com/felipemarinho97/musnify-mpd">Link</a></p>
-			<p>uri-auto - <a href="https://github.com/felipemarinho97/uri-auto">Link</a></p>
-			<p>CDE - <a href="https://github.com/felipemarinho97/ConsultaUP">Link</a></p>
-		</div>
-		<br>
-	</section>
-	<footer class="sectionFooter">
-		<span>
-				Felipe Marinho © 2016, 2017 - Todos os direitos reservados ;)
-			</span>
-	</footer>
+	<div ng-view></div>
 </body>
 
 </html>

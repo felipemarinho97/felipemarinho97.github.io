@@ -5,6 +5,19 @@ body {
 	font-family: "Open Sans";
 	background: #e7e7e7;
 }
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
 .social > a {
 	text-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 	letter-spacing: 1em;
@@ -26,7 +39,7 @@ h1 {
 	font-size: 18pt;
 }
 
-.sectionHeader, footer {
+.sectionHeader, .sectionHeaderCollapsed , footer {
 	text-align: center;
 	background-color: #d32f2f;
 	padding: 10px;
@@ -37,6 +50,15 @@ h1 {
 .sectionHeader {
 	position: fixed;
 	height: 264px;
+	top: 0px;
+	left: 0;
+	right: 0;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.sectionHeaderCollapsed {
+	position: fixed;
+	height: 60px;
 	top: 0px;
 	left: 0;
 	right: 0;
@@ -66,6 +88,9 @@ section > div {
 	border-radius: 50%;
 }
 
-a {
-	text-decoration: none;
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
