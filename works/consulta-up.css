@@ -1,9 +1,9 @@
 .corpo-estilo {
-  position: absolute;
+  position: none;
   background: #FFF;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 50px;
   border-radius: 15px;
   padding: 25px;
