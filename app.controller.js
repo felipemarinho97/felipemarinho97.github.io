@@ -158,7 +158,8 @@ angular.module('felipe')
 
 
 }])
-  .controller("consultaUpCtrl", [function() {
+  .controller("consultaUpCtrl", ["$scope", function($scope) {
+    console.log("fui iniciadp");
     $(window).on('resize', () => {
       if ($(window).width() <= 640) {
         $('.downloadLink').html("Download");
@@ -173,8 +174,18 @@ angular.module('felipe')
 
   }])
   .controller("mainCtrl", ['$scope','$rootScope',function($scope, $rootScope) {
+    function setCorrectTitle(current) {
+      if (current.originalPath == '/ConsultaUP') {
+        $scope.title = "Consulta UP (CDE)"
+      } else {
+        $scope.title = "Felipe Marinho";
+      }
+    }
+
+
     $rootScope.$on('$routeChangeSuccess', function (e, current, pre) {
       $scope.path = current.originalPath ==  '/';
+      setCorrectTitle(current);
     });
   }])
 ;
